@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  mkdocs-material:
+    stdin_open: true
+    tty: true
+    ports:
+      - 8000:8000
+    volumes:
+      - ${PWD}:/docs
+    image: squidfunk/mkdocs-material
+networks: {}
